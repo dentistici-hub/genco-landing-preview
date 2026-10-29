@@ -1,6 +1,7 @@
 # Placeholder domain and noindex until launch (see src/data/site.ts: indexable).
 User-agent: *
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 # AI search and citation crawlers
 User-agent: GPTBot
@@ -23,7 +24,5 @@ User-agent: Google-Extended
 Allow: /
 User-agent: Applebot-Extended
 Allow: /
-
-Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 Sitemap: https://www.gencoserramenti.it/sitemap-index.xml

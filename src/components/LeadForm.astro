@@ -3,8 +3,8 @@ import { form } from '../data/content';
 import { site } from '../data/site';
 ---
 
-<form class="lf" id="modulo" data-form novalidate>
-  <div class="hp" aria-hidden="true"><label>Sito web <input name="website" tabindex="-1" autocomplete="off" /></label></div>
+<form class="lf" id="modulo" method="post" action="#modulo" data-form novalidate>
+  <div class="hp" aria-hidden="true"><label>Lascia vuoto <input name="hp_url" type="text" tabindex="-1" autocomplete="off" /></label></div>
 
   <fieldset class="lf-chips" data-chips>
     <legend>{form.interestLabel}</legend>
@@ -26,6 +26,7 @@ import { site } from '../data/site';
     <span>{form.consent} <a href={site.privacyUrl} target="_blank" rel="noopener">Informativa</a></span>
   </label>
 
-  <button class="btn btn--primary btn--lg" type="submit">{form.submit}</button>
   <p class="lf-status" role="status" aria-live="polite" hidden data-status data-ok={form.thanks} data-err={form.error}></p>
+  <button class="btn btn--paper btn--lg" type="submit" data-submit>{form.submit}</button>
+  <noscript><p class="lf-status">Per inviare la richiesta serve JavaScript. Chiamaci allo {site.phone}.</p></noscript>
 </form>

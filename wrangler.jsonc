@@ -5,5 +5,7 @@
   "assets": { "directory": "./dist", "binding": "ASSETS", "run_worker_first": ["/api/*"] },
   // Secret (not in this file): CRM_INGEST_TOKEN  ->  wrangler secret put CRM_INGEST_TOKEN
   // Needs a Genco tenant in the CRM first; SITO is the tag stored on each lead.
-  "vars": { "SITO": "genco" }
+  "vars": { "SITO": "genco" },
+  // Worker logs (status codes only, no personal data are written by the code).
+  "observability": { "enabled": true }
 }

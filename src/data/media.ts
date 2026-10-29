@@ -23,7 +23,7 @@ export const media: Record<string, Img> = {
   pergolaGiardino: {
     src: pergolaGiardino,
     alt: 'Pergola bioclimatica in alluminio grigio antracite su una terrazza in legno con tavolo, sedie e divano, accanto a una casa con giardino',
-    caption: 'Pergola bioclimatica a parete su due gambe',
+    caption: 'Pergola bioclimatica a parete su due gambe.',
   },
   pergolaRender: {
     src: pergolaRender,
@@ -32,7 +32,7 @@ export const media: Record<string, Img> = {
   },
   vetrate: {
     src: vetrate,
-    alt: 'Villa moderna con ampia vetrata scorrevole panoramica senza montanti verticali, aperta su soggiorno e piscina al tramonto',
+    alt: 'Villa moderna con ampia vetrata scorrevole panoramica con grandi pannelli di vetro, aperta su soggiorno e piscina al tramonto',
     caption: 'Vetrata panoramica senza montanti verticali',
   },
   flashAmbiente: {
@@ -47,17 +47,17 @@ export const media: Record<string, Img> = {
   },
   flashAngolo: {
     src: flashAngolo,
-    alt: 'Dettaglio dell’angolo esterno di una persiana Flash: profilo del telaio, lamella e cerniera',
+    alt: 'Dettaglio dell\'angolo esterno di una persiana Flash: profilo del telaio, lamella e cerniera',
     caption: 'Flash, angolo esterno',
   },
   flashManiglia: {
     src: flashManiglia,
-    alt: 'Dettaglio della maniglia bianca su una persiana Flash, con le lamelle in primo piano',
+    alt: 'Dettaglio della maniglia color crema su una persiana Flash, con le lamelle in primo piano',
     caption: 'Flash, maniglia',
   },
   mixerAngolo: {
     src: mixerAngolo,
-    alt: 'Dettaglio dell’angolo esterno di una persiana Mixer storica color avorio con cerniera nera in ferro',
+    alt: 'Dettaglio dell\'angolo esterno di una persiana Mixer storica color avorio con cerniera nera in ferro',
     caption: 'Mixer storica, angolo esterno',
   },
   mixerManiglia: {
@@ -67,12 +67,12 @@ export const media: Record<string, Img> = {
   },
   mixerEsterna: {
     src: mixerEsterna,
-    alt: 'Persiana Mixer storica color avorio vista dall’esterno, con lamelle e cerniere nere',
+    alt: 'Persiana Mixer storica color avorio vista dall\'esterno, con lamelle e cerniere nere',
     caption: 'Vista esterna',
   },
   mixerInterna: {
     src: mixerInterna,
-    alt: 'Persiana Mixer storica color avorio vista dall’interno, con le lamelle orientabili',
+    alt: 'Persiana Mixer storica color avorio vista dall\'interno, con le lamelle',
     caption: 'Vista interna',
   },
   inversaAmbiente: {
@@ -82,22 +82,22 @@ export const media: Record<string, Img> = {
   },
   inversaAnta: {
     src: inversaAnta,
-    alt: 'Finestra Inversa a un’anta con telaio color bronzo e vetro, su fondo neutro',
+    alt: 'Finestra Inversa a un\'anta con telaio color champagne e vetro, su fondo neutro',
     caption: 'Inversa, anta singola',
   },
   inversaEsterno: {
     src: inversaEsterno,
-    alt: 'Finestre Inversa viste dall’esterno di un’abitazione con terrazza e vista sul mare',
-    caption: 'Vista dall’esterno',
+    alt: 'Finestre Inversa viste dall\'esterno di un\'abitazione con terrazza e vista sul mare',
+    caption: 'Vista dall\'esterno',
   },
   inversaInterno: {
     src: inversaInterno,
-    alt: 'Interno di una stanza con finestre Inversa a telaio bronzo e vista sul mare',
-    caption: 'Vista dall’interno',
+    alt: 'Interno di una stanza con finestre Inversa a telaio champagne e vista sul mare',
+    caption: 'Vista dall\'interno',
   },
   inversaManiglia: {
     src: inversaManiglia,
-    alt: 'Dettaglio della maniglia dorata su un telaio Inversa color bronzo',
+    alt: 'Dettaglio della maniglia dorata su un telaio Inversa color champagne',
     caption: 'Inversa, maniglia',
   },
 };

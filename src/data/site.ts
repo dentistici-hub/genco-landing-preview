@@ -11,17 +11,20 @@ export const site = {
   tagline: 'Persiane, pergole e vetrate su misura',
   title: 'Persiane, pergole e vetrate scorrevoli su misura | Genco',
   description:
-    'Persiane in classe 6, pergole bioclimatiche Climatika e vetrate scorrevoli a pacchetto. Fornitura e posa con un solo referente. Preventivo da foto e misure.',
+    'Persiane, pergole bioclimatiche, vetrate scorrevoli e finestre Inversa su misura. Fornitura e posa a Basiano (MI). Preventivo da misure di massima.',
   area: 'Milano e hinterland', // CONFIRM
-  locality: 'Basiano', // CONFIRM: from the CRM note "sono a Basiano"
+  street: 'Via delle Industrie 22', // from the client's own site footer 2026-10-29
+  postalCode: '20060',
+  locality: 'Basiano',
   region: 'MI',
   country: 'IT',
   // Public numbers taken from gencomultiservice.it/contatti. CONFIRM which ones go on the landing.
   phone: '02 91945749',
   phoneHref: '+390291945749',
   whatsapp: '393534437219', // CONFIRM
-  vat: '', // CONFIRM
-  privacyUrl: 'https://www.gencomultiservice.it/cookie-policy/', // CONFIRM: dedicated privacy page
+  vat: '10538500967', // CONFIRM: taken from the client's own site footer 2026-10-29
+  // STOPGAP: the client's existing privacy policy. Needs its own notice for the landing (form, CRM, trackers) before launch.
+  privacyUrl: 'https://www.gencomultiservice.it/privacy-policy/',
   mainSiteUrl: 'https://www.gencomultiservice.it/',
   // Publication date written in the VideoObject schema: day the client videos went on the page. CONFIRM at launch.
   videoUploadDate: '2026-10-26',

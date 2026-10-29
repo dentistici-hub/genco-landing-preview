@@ -84,13 +84,16 @@ if (banner) {
   const boxA = $('[name="consent-analytics"]');
   const boxM = $('[name="consent-marketing"]');
 
-  const show = (panel) => {
+  const show = (panel, focus = false) => {
     banner.hidden = false;
     main.hidden = panel !== 'main';
     prefs.hidden = panel !== 'prefs';
-    (panel === 'main' ? $('[data-consent-accept]') : $('[data-consent-save]')).focus({ preventScroll: true });
+    if (focus) (panel === 'main' ? $('[data-consent-accept]') : $('[data-consent-save]')).focus({ preventScroll: true });
   };
-  const hide = () => { banner.hidden = true; };
+  const hide = () => {
+    banner.hidden = true;
+    (document.querySelector('[data-consent-open]') || document.body).focus?.({ preventScroll: true });
+  };
 
   const save = (a, m) => {
     const prev = read();
@@ -102,15 +105,15 @@ if (banner) {
 
   $('[data-consent-accept]').addEventListener('click', () => save(true, true));
   $('[data-consent-reject]').addEventListener('click', () => save(false, false));
-  $('[data-consent-customize]').addEventListener('click', () => show('prefs'));
-  $('[data-consent-back]').addEventListener('click', () => show('main'));
+  $('[data-consent-customize]').addEventListener('click', () => show('prefs', true));
+  $('[data-consent-back]').addEventListener('click', () => show('main', true));
   $('[data-consent-save]').addEventListener('click', () => save(!!boxA?.checked, !!boxM?.checked));
 
   document.querySelectorAll('[data-consent-open]').forEach((el) => el.addEventListener('click', () => {
     const c = read();
     if (boxA) boxA.checked = !!c?.a;
     if (boxM) boxM.checked = !!c?.m;
-    show('prefs');
+    show('prefs', true);
   }));
 
   const saved = read();

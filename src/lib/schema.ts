@@ -24,8 +24,11 @@ export function buildGraph(images: Record<string, string[]> = {}) {
     url: `${base}/`,
     description: site.description,
     telephone: site.phoneHref,
+    image: `${base}/og-image.jpg`,
     address: {
       '@type': 'PostalAddress',
+      streetAddress: site.street,
+      postalCode: site.postalCode,
       addressLocality: site.locality,
       addressRegion: site.region,
       addressCountry: site.country,
