@@ -1,0 +1,60 @@
+---
+import '@fontsource-variable/bricolage-grotesque';
+import '@fontsource-variable/inter';
+import '../styles/global.css';
+import { site } from '../data/site';
+import { buildGraph } from '../lib/schema';
+import { u } from '../lib/url';
+import Consent from '../components/Consent.astro';
+import bricolageLatin from '@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-wght-normal.woff2?url';
+
+interface Props { title?: string; description?: string; images?: Record<string, string[]> }
+const { title = site.title, description = site.description, images = {} } = Astro.props;
+const canonical = new URL(Astro.url.pathname, site.url).toString();
+const ogImage = new URL(u('/og-image.jpg'), site.url).toString();
+const graph = JSON.stringify(buildGraph(images));
+---
+
+<!doctype html>
+<html lang={site.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#10181d" />
+    <meta name="color-scheme" content="light" />
+    {site.indexable
+      ? <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+      : <meta name="robots" content="noindex, nofollow" />}
+    <link rel="preload" href={bricolageLatin} as="font" type="font/woff2" crossorigin />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href={u('/favicon.svg')} type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:site_name" content={site.brand} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="alternate" type="text/plain" href={u('/llms.txt')} title="llms.txt" />
+    <script type="application/ld+json" set:html={graph} />
+    <script is:inline>document.documentElement.classList.add('js');</script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Vai al contenuto</a>
+    <slot />
+    <Consent />
+    <script>
+      import '../scripts/main.js';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "genco-landing",
+  "main": "./worker/index.js",
+  "compatibility_date": "2026-10-06",
+  "assets": { "directory": "./dist", "binding": "ASSETS", "run_worker_first": ["/api/*"] },
+  // Secret (not in this file): CRM_INGEST_TOKEN  ->  wrangler secret put CRM_INGEST_TOKEN
+  // Needs a Genco tenant in the CRM first; SITO is the tag stored on each lead.
+  "vars": { "SITO": "genco" }
+}
