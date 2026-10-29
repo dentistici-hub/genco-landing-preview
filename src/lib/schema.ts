@@ -15,6 +15,7 @@ export function buildGraph(images: Record<string, string[]> = {}) {
   const biz = `${base}/#business`;
   const page = `${base}/#webpage`;
   const abs = (p: string) => new URL(p, site.url).toString();
+  const areaServed = site.areas.map((name) => ({ '@type': 'AdministrativeArea', name }));
 
   const business: Record<string, unknown> = {
     '@type': ['HomeAndConstructionBusiness', 'LocalBusiness'],
@@ -23,7 +24,7 @@ export function buildGraph(images: Record<string, string[]> = {}) {
     alternateName: site.brand,
     url: `${base}/`,
     description: site.description,
-    telephone: site.phoneHref,
+    telephone: [site.phoneHref, site.phone2Href],
     image: `${base}/og-image.jpg`,
     address: {
       '@type': 'PostalAddress',
@@ -33,7 +34,7 @@ export function buildGraph(images: Record<string, string[]> = {}) {
       addressRegion: site.region,
       addressCountry: site.country,
     },
-    areaServed: { '@type': 'AdministrativeArea', name: site.area },
+    areaServed,
     knowsAbout: ['Persiane', 'Pergole bioclimatiche', 'Vetrate scorrevoli', 'Finestre in PVC e alluminio', 'Serramenti', 'Oscuranti'],
     sameAs: [site.mainSiteUrl],
     hasOfferCatalog: {
@@ -55,7 +56,7 @@ export function buildGraph(images: Record<string, string[]> = {}) {
       serviceType: p.kicker,
       description: p.paras.join(' '),
       provider: { '@id': biz },
-      areaServed: { '@type': 'AdministrativeArea', name: site.area },
+      areaServed,
       url: `${base}/#${p.id}`,
     };
     if (images[p.id]?.length) s.image = images[p.id];

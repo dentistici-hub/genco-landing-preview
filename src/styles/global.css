@@ -85,7 +85,7 @@ h3 { font-size: 1.5rem; }
 .nav a { font-size: .86rem; text-decoration: none; color: var(--ink-2); padding: 6px 0; border-bottom: 1px solid transparent; transition: border-color .2s, color .2s; }
 .nav a:hover { color: var(--ink); border-color: var(--accent); }
 .hdr__cta { display: flex; align-items: center; gap: 18px; }
-.hdr__tel { display: none; font-weight: 500; font-size: .92rem; text-decoration: none; font-variant-numeric: tabular-nums; }
+.hdr__tel { display: none; white-space: nowrap; font-weight: 500; font-size: .92rem; text-decoration: none; font-variant-numeric: tabular-nums; }
 
 /* ---------- hero ---------- */
 .hero { position: relative; display: flex; align-items: flex-end; min-height: min(86svh, 820px); color: var(--on-deep); background: var(--deep); overflow: hidden; }
@@ -262,6 +262,7 @@ h3 { font-size: 1.5rem; }
 @media (min-width: 900px) {
   .nav { display: flex; }
   .hdr__tel { display: inline; }
+  .hdr__tel--2 { display: none; } /* the second number joins the header only when there is room (see 1180px below) */
   .shot--wide picture { aspect-ratio: 21 / 9; }
   .intro__in { grid-template-columns: 1.15fr .85fr; align-items: end; }
   .prod__cols { grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 96px); }
@@ -285,4 +286,8 @@ h3 { font-size: 1.5rem; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+
+@media (min-width: 1180px) {
+  .hdr__tel--2 { display: inline; }
 }

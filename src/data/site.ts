@@ -7,12 +7,14 @@ export const site = {
   url: (import.meta.env.PUBLIC_SITE_URL as string | undefined) || 'https://www.gencoserramenti.it',
   lang: 'it',
   brand: 'Genco',
-  legalName: 'GENCO Multiservice srl',
+  legalName: 'GENCO srl',
   tagline: 'Persiane, pergole e vetrate su misura',
   title: 'Persiane, pergole e vetrate scorrevoli su misura | Genco',
   description:
-    'Persiane, pergole bioclimatiche, vetrate scorrevoli e finestre Inversa su misura. Fornitura e posa a Basiano (MI). Preventivo da misure di massima.',
-  area: 'Milano e hinterland', // CONFIRM
+    'Persiane, pergole bioclimatiche, vetrate scorrevoli e finestre Inversa su misura. Fornitura e posa tra Milano, Bergamo, Brescia, Monza Brianza, Lodi e Pavia.',
+  // Service area, from the client's feedback 2026-10-29.
+  area: 'Milano, Bergamo, Brescia, Monza Brianza, Lodi e Pavia',
+  areas: ['Milano', 'Bergamo', 'Brescia', 'Monza e Brianza', 'Lodi', 'Pavia'],
   street: 'Via delle Industrie 22', // from the client's own site footer 2026-10-29
   postalCode: '20060',
   locality: 'Basiano',
@@ -21,6 +23,9 @@ export const site = {
   // Public numbers taken from gencomultiservice.it/contatti. CONFIRM which ones go on the landing.
   phone: '02 91945749',
   phoneHref: '+390291945749',
+  // Mobile number added by the client 2026-10-29 (338/3472517).
+  phone2: '338 3472517',
+  phone2Href: '+393383472517',
   whatsapp: '393534437219', // CONFIRM
   vat: '10538500967', // CONFIRM: taken from the client's own site footer 2026-10-29
   // STOPGAP: the client's existing privacy policy. Needs its own notice for the landing (form, CRM, trackers) before launch.

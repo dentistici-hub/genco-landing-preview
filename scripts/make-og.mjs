@@ -13,7 +13,7 @@ const overlay = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1200
 <text x="72" y="120" font-family="Georgia, 'Times New Roman', serif" font-size="24" letter-spacing="5" fill="#dba682" font-weight="700">PERSIANE · PERGOLE · VETRATE</text>
 <text font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700" fill="#ffffff" letter-spacing="-2"><tspan x="72" y="240">Persiane,</tspan><tspan x="72" y="316">pergole e vetrate</tspan><tspan x="72" y="392">fornite e posate da noi.</tspan></text>
 <text x="72" y="540" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700" fill="#ffffff">Genco</text>
-<text x="72" y="580" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#c3cbd0">GENCO Multiservice srl</text>
+<text x="72" y="580" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#c3cbd0">GENCO srl</text>
 </svg>`);
 await sharp(bg).composite([{ input: overlay }]).jpeg({ quality: 86, mozjpeg: true }).toFile(out);
 console.log('og-image.jpg written');

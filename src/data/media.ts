@@ -27,8 +27,8 @@ export const media: Record<string, Img> = {
   },
   pergolaRender: {
     src: pergolaRender,
-    alt: 'Rendering di una pergola bioclimatica in alluminio con lame orientabili, illuminazione LED nel perimetro e gamba con sistema di drenaggio',
-    caption: 'Lame orientabili, LED nel perimetro e drenaggio nelle gambe',
+    alt: 'Rendering di una pergola bioclimatica in alluminio con lame orientabili, illuminazione LED nel perimetro (a richiesta) e gamba con sistema di drenaggio',
+    caption: 'Lame orientabili e drenaggio nelle gambe. LED nel perimetro a richiesta',
   },
   vetrate: {
     src: vetrate,

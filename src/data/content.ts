@@ -13,8 +13,8 @@ export const hero = {
 };
 
 export const intro = {
-  kicker: 'Genco Multiservice',
-  text: `Genco Multiservice srl, con sede a Basiano (MI), fornisce e posa persiane, pergole bioclimatiche, vetrate scorrevoli e finestre per case e aziende. Segue il lavoro dal sopralluogo alla posa e resta a disposizione dopo, per regolazioni e interventi.`,
+  kicker: 'Genco srl',
+  text: `Genco srl, con sede a Basiano (MI), fornisce e posa persiane, pergole bioclimatiche, vetrate scorrevoli e finestre per case e aziende. Segue il lavoro dal sopralluogo alla posa e resta a disposizione dopo, per regolazioni e interventi.`,
 };
 
 export type Spec = [string, string];
@@ -85,7 +85,7 @@ export const products: Product[] = [
     h2: 'Pergole bioclimatiche con lame motorizzate.',
     paras: [
       `La struttura è in alluminio. Le lame motorizzate si orientano per far passare luce e aria. A lame chiuse la copertura protegge dalla pioggia e il drenaggio nelle gambe porta via l'acqua, senza ristagni.`,
-      `I LED sono integrati nella struttura. A richiesta si aggiungono sensori per neve, pioggia, sole e vento e le tende motorizzate ZIP.`,
+      `I LED sono a richiesta e non sono compresi nel prezzo. A richiesta si aggiungono anche sensori per neve, pioggia, sole e vento e le tende motorizzate ZIP.`,
     ],
     specsCaption: 'Pergola bioclimatica Biemme Finestre: dati principali',
     specs: [
@@ -96,6 +96,7 @@ export const products: Product[] = [
       ['Larghezza massima per modulo', '5000 mm, più moduli per larghezze maggiori'],
       ['Motore TUB200R2', '230 V, 350 W, rumore fino a 50 dB'],
       ['Installazione', 'Quattro gambe, a parete su due gambe, tra due pareti senza gambe'],
+      ['Illuminazione LED', 'A richiesta, non compresa nel prezzo'],
       ['A richiesta', 'Sensori per neve, pioggia, sole e vento. Tende motorizzate ZIP'],
     ],
     main: 'pergolaGiardino',
@@ -109,7 +110,7 @@ export const products: Product[] = [
           ['Lamelle', 'Orientabili da 0° a 135°'],
           ['Dimensioni massime', 'L 420 × S 600 cm'],
           ['Resistenza al vento', 'Classe 6'],
-          ['Illuminazione', `A richiesta: LED nel perimetro (luce bianca o RGB dimmerabile) e nelle lame (bianca o RGB)`],
+          ['Illuminazione', `A richiesta e non compresi nel prezzo: LED nel perimetro (luce bianca o RGB dimmerabile) e nelle lame (bianca o RGB)`],
         ],
       },
       {
@@ -123,10 +124,10 @@ export const products: Product[] = [
   {
     id: 'vetrate',
     kicker: 'Vetrate scorrevoli',
-    teaser: 'Scorrevoli, impacchettabili, Privé',
-    h2: 'Vetrate panoramiche Visibilia, senza montanti verticali.',
+    teaser: 'Scorrevoli e impacchettabili',
+    h2: 'Vetrate panoramiche VEPA, senza montanti verticali.',
     paras: [
-      `Visibilia esiste in tre versioni: scorrevole, impacchettabile e Privé. I pannelli di vetro non hanno montanti verticali, quindi la vista resta libera.`,
+      `Le vetrate panoramiche VEPA (vetrate panoramiche amovibili) esistono in due versioni: scorrevole e impacchettabile. I pannelli di vetro non hanno montanti verticali, quindi la vista resta libera.`,
       `Nell'impacchettabile le ante si raccolgono di lato, verso l'interno o verso l'esterno. Il peso scarica sul profilo inferiore, quindi il sistema si monta anche sotto un controsoffitto. Secondo la scheda del sistema non servono opere murarie, e i componenti sono testati in nebbia salina.`,
       `Le vetrate proteggono da vento, polvere e rumore, ma non sostituiscono un serramento isolante.`,
     ],
@@ -151,7 +152,7 @@ export const products: Product[] = [
       {
         title: 'Scorrevole',
         text: `Le ante scorrono su carrelli con ruote in acciaio inox, regolabili fino a +7 mm. La guida è alta 19 mm e riduce le barriere architettoniche.`,
-        specsCaption: 'Visibilia scorrevole: dati principali',
+        specsCaption: 'Vetrata scorrevole: dati principali',
         specs: [
           ['Guida', '19 mm'],
           ['Profilo portavetro', '64 mm'],
@@ -163,17 +164,6 @@ export const products: Product[] = [
       {
         title: 'Impacchettabile',
         text: `I compensatori superiore, inferiore e laterale registrano i fuori squadro. Secondo Biemme Finestre è l'unico sistema sul mercato regolabile sui quattro lati del vano. I profili di scorrimento sono in teflon.`,
-      },
-      {
-        title: 'Privé',
-        text: `Un dispositivo integrato nel vetro lo rende trasparente o oscurato con un comando, per avere privacy e ridurre l'irraggiamento solare diretto. Esiste solo nella versione scorrevole.`,
-        specsCaption: 'Visibilia Privé: dati principali',
-        specs: [
-          ['Temperatura di funzionamento', 'Da -20 °C a +60 °C'],
-          ['Tempo di risposta', '10 ms'],
-          ['Consumo', '3-5 W/m²'],
-          ['Produzione del vetro', 'Serisolar / Innoptec'],
-        ],
       },
     ],
     cta: 'Preventivo per le vetrate',
@@ -255,7 +245,7 @@ export const steps = [
 export const about = {
   kicker: 'Genco',
   h2: 'General contractor per infissi, oscuranti, porte, vetrate e pergole.',
-  text: `Genco Multiservice lavora per privati e aziende e segue il lavoro dalla fornitura alla posa, fino al post vendita. Nel catalogo completo ci sono anche porte, inferriate, zanzariere e tende da sole.`,
+  text: `Genco srl lavora per privati e aziende e segue il lavoro dalla fornitura alla posa, fino al post vendita. Nel catalogo completo ci sono anche porte, inferriate, zanzariere e tende da sole.`,
   link: 'Vai al catalogo completo',
 };
 
@@ -283,7 +273,7 @@ export const faq: FaqGroup[] = [
       },
       {
         q: `Si possono aggiungere luci, sensori e tende?`,
-        a: `I LED sono integrati nella struttura. A richiesta si aggiungono sensori per neve, pioggia, sole e vento e tende motorizzate con sistema ZIP.`,
+        a: `Sì. I LED sono a richiesta e non sono compresi nel prezzo. A richiesta si aggiungono anche sensori per neve, pioggia, sole e vento e tende motorizzate con sistema ZIP.`,
       },
       {
         q: `Quanto resiste al vento la pergola Climatika?`,
@@ -316,12 +306,8 @@ export const faq: FaqGroup[] = [
     title: 'Vetrate scorrevoli',
     items: [
       {
-        q: `Che differenza c'è tra vetrata scorrevole, impacchettabile e Privé?`,
-        a: `La scorrevole ha ante che scorrono su guide di 19 mm. L'impacchettabile raccoglie le ante di lato, verso l'interno o l'esterno, e libera tutta l'apertura. La Privé è una scorrevole con un vetro che passa da trasparente a oscurato con un comando.`,
-      },
-      {
-        q: `Come funziona il vetro Privé?`,
-        a: `Un dispositivo integrato nel vetro lo rende trasparente o oscurato con un comando. Funziona da -20 °C a +60 °C, risponde in 10 ms e consuma 3-5 W/m². Esiste solo nella versione scorrevole.`,
+        q: `Che differenza c'è tra vetrata scorrevole e impacchettabile?`,
+        a: `La scorrevole ha ante che scorrono su guide di 19 mm. L'impacchettabile raccoglie le ante di lato, verso l'interno o l'esterno, e libera tutta l'apertura.`,
       },
       {
         q: `Le vetrate scorrevoli isolano dal freddo?`,
@@ -364,6 +350,10 @@ export const faq: FaqGroup[] = [
       {
         q: `Genco fa anche la posa?`,
         a: `Sì. Genco fornisce e posa persiane, pergole, vetrate e finestre, e segue anche il post vendita.`,
+      },
+      {
+        q: `In quali zone lavorate?`,
+        a: `Lavoriamo nelle province di Milano, Bergamo, Brescia, Monza Brianza, Lodi e Pavia.`,
       },
     ],
   },
