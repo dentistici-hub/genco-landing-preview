@@ -4,6 +4,11 @@ import { faq, products, videos } from '../data/content';
 // One @graph so every entity can point at the others by @id. Only facts that exist on the client's
 // own pages or in the producer's material are emitted; empty settings (vat, ratings, reviews) produce no
 // property at all. `images` maps a product id to absolute URLs of its optimized photos.
+const brands: Record<string, string[]> = {
+  pergole: ['Biemme Finestre', 'Gaviota'],
+  vetrate: ['Biemme Finestre'],
+  finestre: ['Biemme Finestre'],
+};
 
 export function buildGraph(images: Record<string, string[]> = {}) {
   const base = site.url.replace(/\/$/, '');
@@ -54,6 +59,7 @@ export function buildGraph(images: Record<string, string[]> = {}) {
       url: `${base}/#${p.id}`,
     };
     if (images[p.id]?.length) s.image = images[p.id];
+    if (brands[p.id]) s.brand = brands[p.id].map((name) => ({ '@type': 'Brand', name }));
     return s;
   });
 

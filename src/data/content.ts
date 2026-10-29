@@ -87,7 +87,7 @@ export const products: Product[] = [
       `La struttura è in alluminio. Le lame motorizzate si orientano per far passare luce e aria. A lame chiuse la copertura protegge dalla pioggia e il drenaggio nelle gambe porta via l'acqua, senza ristagni.`,
       `I LED sono integrati nella struttura. A richiesta si aggiungono sensori per neve, pioggia, sole e vento e le tende motorizzate ZIP.`,
     ],
-    specsCaption: 'Pergola bioclimatica: dati principali',
+    specsCaption: 'Pergola bioclimatica Biemme Finestre: dati principali',
     specs: [
       ['Struttura', 'Alluminio'],
       ['Lame', 'Motorizzate, rotazione da 0° a 90°'],
@@ -102,7 +102,7 @@ export const products: Product[] = [
     more: ['pergolaRender'],
     groups: [
       {
-        title: 'Climatika',
+        title: 'Climatika (Gaviota)',
         text: `Un'altra linea a catalogo, con lamelle orientabili da 0° a 135°. È predisposta per chiusure perimetrali con vetrate panoramiche, tende verticali e frangisole.`,
         specsCaption: 'Pergola Climatika: dati principali',
         specs: [
@@ -162,7 +162,7 @@ export const products: Product[] = [
       },
       {
         title: 'Impacchettabile',
-        text: `I compensatori superiore, inferiore e laterale registrano i fuori squadro. Secondo la scheda del sistema è l'unico sul mercato regolabile sui quattro lati del vano. I profili di scorrimento sono in teflon.`,
+        text: `I compensatori superiore, inferiore e laterale registrano i fuori squadro. Secondo Biemme Finestre è l'unico sistema sul mercato regolabile sui quattro lati del vano. I profili di scorrimento sono in teflon.`,
       },
       {
         title: 'Privé',
@@ -172,6 +172,7 @@ export const products: Product[] = [
           ['Temperatura di funzionamento', 'Da -20 °C a +60 °C'],
           ['Tempo di risposta', '10 ms'],
           ['Consumo', '3-5 W/m²'],
+          ['Produzione del vetro', 'Serisolar / Innoptec'],
         ],
       },
     ],
@@ -184,7 +185,7 @@ export const products: Product[] = [
     teaser: 'PVC e alluminio, Made in Italy',
     h2: 'Inversa, la finestra in PVC e alluminio.',
     paras: [
-      `Inversa è una finestra ibrida: dentro un guscio in PVC riciclato al 97%, fuori l'alluminio estruso. Viene presentata come il primo serramento ibrido italiano e in linea con i parametri europei 2030.`,
+      `Inversa è una finestra ibrida di Biemme Finestre: dentro un guscio in PVC riciclato al 97%, fuori l'alluminio estruso. Biemme la presenta come il primo serramento ibrido italiano e in linea con i parametri europei 2030.`,
       `Il nodo centrale è di 85 mm e quello laterale di 80 mm, quindi il vetro occupa più superficie. Le cornici esterne sono in alluminio, a uno o due colori, con angoli saldati (sistema brevettato).`,
     ],
     specsCaption: 'Finestra Inversa: dati principali',
@@ -195,7 +196,7 @@ export const products: Product[] = [
       ['Nodo laterale', '80 mm'],
       ['Cornici esterne', 'Alluminio mono o bicolore, angoli saldati (brevettato)'],
       ['Produzione', '100% Made in Italy'],
-      ['Trasmittanza termica', 'Uw 1,3 con vetro doppio'],
+      ['Trasmittanza termica', 'Uw 1,3 con vetro doppio (dato del produttore)'],
     ],
     main: 'inversaAmbiente',
     more: ['inversaEsterno', 'inversaInterno', 'inversaManiglia'],
@@ -211,7 +212,7 @@ export const videos = [
     poster: u('/video/inversa-spot-poster.jpg'),
     captions: u('/video/inversa-spot.it.vtt'),
     title: 'Inversa, la finestra ibrida dal design minimale',
-    description: 'Lo spot della finestra Inversa.',
+    description: 'Lo spot di Biemme Finestre per Inversa.',
     duration: 'PT30S',
     label: '30 secondi',
     transcript:
@@ -233,7 +234,7 @@ export const videos = [
 
 export const qc = {
   title: 'Sei controlli prima della consegna',
-  text: 'Il video mostra come passa ogni finestra Inversa dalla fabbrica al camion.',
+  text: 'Biemme Finestre mostra in video come passa ogni finestra Inversa dalla fabbrica al camion.',
   steps: [
     { t: 'Vetri', d: 'Ispezione dell\'intera superficie su una lavagna luminosa LED.' },
     { t: 'Ante e telai', d: 'Si toglie la pellicola protettiva e si controllano e puliscono le superfici in alluminio.' },
@@ -266,7 +267,7 @@ export const faq: FaqGroup[] = [
     items: [
       {
         q: `Cos'è una pergola bioclimatica e come funziona?`,
-        a: `Ha le lame orientabili. Le inclini per far entrare luce e aria o le chiudi per fare ombra e riparare dalla pioggia. Nel modello a catalogo la rotazione va da 0° a 90°, nella Climatika da 0° a 135°.`,
+        a: `Ha le lame orientabili. Le inclini per far entrare luce e aria o le chiudi per fare ombra e riparare dalla pioggia. Nella pergola Biemme la rotazione va da 0° a 90°, nella Climatika da 0° a 135°.`,
       },
       {
         q: `Cosa succede alla pergola quando piove?`,
@@ -274,7 +275,7 @@ export const faq: FaqGroup[] = [
       },
       {
         q: `Quanto può essere grande una pergola bioclimatica?`,
-        a: `Ogni modulo arriva a 5000 mm di larghezza e per larghezze maggiori si affiancano più moduli. Le lame dritte arrivano a 4000 mm di larghezza, oltre si usano lame ondulate. La Climatika arriva a 420 cm di larghezza per 600 cm di sporgenza.`,
+        a: `Ogni modulo Biemme arriva a 5000 mm di larghezza e per larghezze maggiori si affiancano più moduli. Le lame dritte arrivano a 4000 mm di larghezza, oltre si usano lame ondulate. La Climatika arriva a 420 cm di larghezza per 600 cm di sporgenza.`,
       },
       {
         q: `Come si installa una pergola bioclimatica?`,
@@ -337,11 +338,11 @@ export const faq: FaqGroup[] = [
     items: [
       {
         q: `Cos'è la finestra Inversa?`,
-        a: `È una finestra ibrida: il cuore è in PVC, con un guscio riciclato al 97%, e l'esterno è in alluminio estruso. Il nodo centrale è da 85 mm e quello laterale da 80 mm.`,
+        a: `È una finestra ibrida di Biemme Finestre: il cuore è in PVC, con un guscio riciclato al 97%, e l'esterno è in alluminio estruso. Il nodo centrale è da 85 mm e quello laterale da 80 mm.`,
       },
       {
         q: `Dove viene prodotta la finestra Inversa?`,
-        a: `In Italia: viene presentata come il primo sistema ibrido 100% Made in Italy.`,
+        a: `In Italia: Biemme Finestre la presenta come il primo sistema ibrido 100% Made in Italy.`,
       },
       {
         q: `Come viene controllata una finestra Inversa prima della consegna?`,
