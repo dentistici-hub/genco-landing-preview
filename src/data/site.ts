@@ -26,7 +26,7 @@ export const site = {
   // Mobile number added by the client 2026-10-29 (338/3472517).
   phone2: '338 3472517',
   phone2Href: '+393383472517',
-  whatsapp: '393534437219', // CONFIRM
+  whatsapp: '393383472517', // the client confirmed 338 3472517 is the WhatsApp number (Denis, 2026-11-01)
   vat: '10538500967', // CONFIRM: taken from the client's own site footer 2026-10-29
   // STOPGAP: the client's existing privacy policy. Needs its own notice for the landing (form, CRM, trackers) before launch.
   privacyUrl: 'https://www.gencomultiservice.it/privacy-policy/',
