@@ -30,6 +30,10 @@ const clean = (v, max) => (typeof v === 'string' ? v.replace(/[\u0000-\u0008\u00
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.hostname === 'gencoserramenti.it') {
+      url.hostname = 'www.gencoserramenti.it';
+      return Response.redirect(url.toString(), 301);
+    }
     if (url.pathname !== '/api/lead') return env.ASSETS.fetch(request);
 
     if (request.method !== 'POST') return json(405, { ok: false }, { allow: 'POST' });

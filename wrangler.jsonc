@@ -2,7 +2,14 @@
   "name": "genco-landing",
   "main": "./worker/index.js",
   "compatibility_date": "2026-10-06",
-  "assets": { "directory": "./dist", "binding": "ASSETS", "run_worker_first": ["/api/*"] },
+  // Genco's own Cloudflare account (Profilo is admin).
+  "account_id": "7d4457be94cc623ab5f835e828bc7523",
+  "routes": [
+    { "pattern": "www.gencoserramenti.it", "custom_domain": true },
+    { "pattern": "gencoserramenti.it", "custom_domain": true }
+  ],
+  // Worker first everywhere so the bare domain can redirect to www.
+  "assets": { "directory": "./dist", "binding": "ASSETS", "run_worker_first": true },
   // Secret (not in this file): CRM_INGEST_TOKEN  ->  wrangler secret put CRM_INGEST_TOKEN
   // Needs a Genco tenant in the CRM first; SITO is the tag stored on each lead.
   "vars": { "SITO": "genco" },
