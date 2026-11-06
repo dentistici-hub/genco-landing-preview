@@ -240,7 +240,7 @@ const num = (i: number) => String(i + 1).padStart(2, '0');
     <div class="wrap ftr__in">
       <p><strong>{site.legalName}</strong>{site.vat ? ` · P.IVA ${site.vat}` : ''}<br />{site.street}, {site.postalCode} {site.locality} ({site.region}) · <a href={`tel:${site.phoneHref}`}>{site.phone}</a> · <a href={`tel:${site.phone2Href}`}>{site.phone2}</a></p>
       <p><a href={site.mainSiteUrl} rel="noopener">Catalogo completo</a> · <a href={site.privacyUrl} rel="noopener">Privacy e cookie</a>{hasTracking && <> · <button type="button" class="linklike" data-consent-open>Gestisci cookie</button></>}</p>
-      <p class="ftr__c">© {year} {site.legalName}. I marchi Biemme Finestre e Gaviota appartengono ai rispettivi titolari.</p>
+      <p class="ftr__c">© {year} {site.legalName}. I marchi Biemme Finestre e Gaviota appartengono ai rispettivi titolari.<br />In collaborazione con <a href="https://www.profilomarketing.it/" rel="noopener">Profilo Marketing</a></p>
     </div>
   </footer>
 

@@ -225,6 +225,7 @@ h3 { font-size: 1.5rem; }
 .ftr strong { color: #fff; font-weight: 500; }
 .ftr a, .ftr .linklike { color: var(--on-deep); display: inline-block; padding-block: 10px; }
 .ftr__c { font-size: .8rem; opacity: .75; }
+.ftr__c a { padding-block: 0; }
 .mbar { position: fixed; inset: auto 0 0 0; z-index: 60; display: grid; grid-template-columns: auto 1fr; gap: 10px; padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom)); background: var(--paper); border-top: 1px solid var(--line); transition: transform .35s var(--ease); }
 .mbar .btn { padding: 0 16px; min-width: 0; }
 .mbar.is-hidden { transform: translateY(110%); visibility: hidden; transition: transform .35s var(--ease), visibility 0s .35s; }
